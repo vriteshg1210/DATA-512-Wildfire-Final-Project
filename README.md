@@ -16,7 +16,7 @@ The main inspiration behind this project is that more frequently summers in the 
 4. Hospital Dataset: This was taken from the Oregon Health Authority Hospital Reporting and can be found at https://www.oregon.gov/oha/hpa/analytics/pages/hospital-reporting.aspx 
 
 ## Important Consideration for the Data
-The GeoJSON dataset provided by the USGS is extensive, encompassing around 136,000 fire occurrences that demanded comprehensive analysis. While utilizing Prof. David McDonald's Reader facilitated data loading, filtering this dataset involved the meticulous selection of fire occurrences relevant to the scope of this assignment, a task that consumed a substantial amount of time.
+The GeoJSON dataset provided by the USGS is extensive, encompassing around 136,000 fire occurrences that demanded comprehensive analysis. While utilizing Prof. David McDonald's reader-facilitated data loading, filtering this dataset involved the meticulous selection of fire occurrences relevant to the scope of this assignment, a task that consumed a substantial amount of time.
 
 Additionally, extensive error handling was essential since not all fields were consistently present in every data row. An example of this is the 'rings' parameter, which required careful validation and appropriate handling.
 
@@ -29,21 +29,22 @@ Because different weather stations operated in different years, data consolidati
 Moreover, responses from the EPA API sometimes lack the 'aqi' parameter, requiring robust exception handling. In my city locations, data for gaseous pollutants was notably absent, with only data available for particulate pollutants, prompting the need for specialized handling in this specific scenario.
 
 ## Documentation
-In order to read in the wildfire data, the following example notebook provided by Professor David McDonald  was used under the CC-BY license.  
+
+In order to read the wildfire data, the following example notebook provided by Professor David McDonald  was used under the CC-BY license.  
 Example Notebook for Reading in the Wildfire Data - https://drive.google.com/file/d/1qNI6hji8CvDeBsnLDAhJXvaqf2gcg8UV/view  
-We also used the GeoJSON reader provided by Professor David McDonald for the above purpose under the same licence.  
+We also used the GeoJSON reader provided by Professor David McDonald for the above purpose under the same license.  
 Link - https://drive.google.com/file/d/1TwCkvdaw0MxJzW7NSDg6XxYQ0dvaS44I/view   
 CC-BY License - https://creativecommons.org/licenses/by/4.0/ 
 This project adheres to the recommended best practices for replication and documentation:
 Jupyter Notebooks: detailed comments for data acquisition, processing, and analysis.
 README File: Offers a general overview of the project, outlining its objectives, data sources, data processing procedures, and standards for reproducibility.
-LICENSE File: Contains the MIT LICENSE for the project's code, ensuring it is freely usable and the Creative Commons License.
+LICENSE File: Contains the MIT LICENSE for the project's code, ensuring it is freely usable, and the Creative Commons License.
 
 ## Code Files
 
 1. DATA 512 Wildfire Part 1.ipynb-This ipynb notebook is for data acquisition and initial analysis 
 2. epa_air_quality_history.ipynb- This is the notebook for the acquisition of AQI data
-3. Final Analysis.ipynb- This notebook contains code for the comparitive analysis and predictive modeling.
+3. Final Analysis.ipynb- This notebook contains code for the comparative analysis and predictive modeling.
 
 ## Environment
 Jupyter was used in order to run a .ipynb Notebook. Any editor that allows .ipynb notebooks can be used to run this project following the installation of the modules specified in the code.
@@ -84,20 +85,28 @@ Step 6: Reading Hospital data
 Read the hospital data and pre-process to make it suitable to use
 
 Step 7: Plotting Visualization
-We will plot the total available hospitals beds and total hospital revenue over the years
+We will plot the total available hospital beds and total hospital revenue over the years
 
 Step 8: Predict future values
-Using the predicted values of smoke estimate, predict the hospitals beds and total hospital revenue for the next 25 years
+Using the predicted values of the smoke estimate, predict the hospital beds and total hospital revenue for the next 25 years
 
 ## Important Links
+
 https://www.sciencebase.gov/catalog/file/get/61aa537dd34eb622f699df81?f=__disk__d0%2F63%2F53%2Fd063532049be8e1bc83d1d3047b4df1a5cb56f15&transform=1&allowOpen=true
 https://aqs.epa.gov/aqsweb/documents/data_api.html
 https://www.statsmodels.org/stable/generated/statsmodels.tsa.ar_model.AutoReg.html
 https://drive.google.com/file/d/1qNI6hji8CvDeBsnLDAhJXvaqf2gcg8UV/view
 
 ## Limitations  
-The specific causes of death are not provided in the dataset. Knowing the leading causes of death for each year can help interpret the age-adjusted death rates more comprehensively. Further, the data being used for this study only covers the last 20 years and has been restricted to the city of Benicia, CA. 
+
+a. Availability of a good dataset: The additional data that I am using for extending this analysis has been pulled from the internet. It has been reported by the government of Oregon but its accuracy can always be questioned. Also, I would have loved to have access to a few more data points which would have increased the accuracy of my prediction model.
+b. Accuracy of smoke estimate: The smoke estimate that I have created was based on the limited supply of data I had in the previous part. In reality, the AQI value analysis is based on the concentrations of several major air pollutants, each weighted to reflect its potential health impact. The common pollutants considered in the AQI calculation are Ground-level Ozone (O3), Particulate Matter (PM10 and PM2.5), Carbon Monoxide (CO), Sulfur Dioxide (SO2), Nitrogen Dioxide (NO2).
+c. Unavailability of data: We do not have hospital data from 1963 to 2007. This limits the horizon of our analysis
+d. Assuming Autocorrelation: As we are using an autoregressive model for predicting the smoke estimate for the future 25 years, we are assuming that the values at the previous time steps are useful to predict the future values of the smoke estimate.
+e. Other factors affecting the healthcare system: As we are doing an analysis on the smoke from wildfires, we have concentrated on it being the cause of the various impacts that we have talked about in the report. However, we need to mention that several other factors can have a direct impact on our research questions. For example, a general increase in the price of healthcare can be one of the reasons for an increase in the revenue of hospitals. Only wildfires cannot be blamed for this.
+
 
 ## Contact Detail
+
 For any additional questions or feedback, please contact [Vritesh Gera] at [vriteshg@uw.edu]
 
