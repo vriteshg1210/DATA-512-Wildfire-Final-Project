@@ -14,6 +14,7 @@ The main inspiration behind this project is that more frequently summers in the 
 3. A spreadsheet listing the assignments of different cities- https://docs.google.com/spreadsheets/d/1cmTW5fgU3KyH6JbrRao-qWjzu2GovKk_BkA7a-poGFw/edit#gid=1247370552
 
 4. Hospital Dataset: This was taken from the Oregon Health Authority Hospital Reporting and can be found at https://www.oregon.gov/oha/hpa/analytics/pages/hospital-reporting.aspx
+A detailed summary of this dataset and its columns has been given in the final report
 
 ## Important Consideration for the Data
 The GeoJSON dataset provided by the USGS is extensive, encompassing around 136,000 fire occurrences that demanded comprehensive analysis. While utilizing Prof. David McDonald's reader-facilitated data loading, filtering this dataset involved the meticulous selection of fire occurrences relevant to the scope of this assignment, a task that consumed a substantial amount of time.
