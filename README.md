@@ -15,44 +15,6 @@ The main inspiration behind this project is that more frequently summers in the 
 
 4. Hospital Dataset: This was taken from the Oregon Health Authority Hospital Reporting and can be found at https://www.oregon.gov/oha/hpa/analytics/pages/hospital-reporting.aspx
 
-An extensive summary of hospital-related metrics can be found in this dataset, which is taken from the hospital reporting of the Oregon Health Authority. Here is a brief synopsis of the main columns from the website itself: 
-•	AHA ID
-o	Definition: Unique hospital identifier by the American Hospital Association.
-•	Hospital Name
-o	Definition: Full name of the hospital.
-•	Hospital Short Name
-o	Definition: Abbreviated name for the hospital.
-•	Type
-o	Definition: Classification of the hospital (e.g., general, specialty).
-•	Critical Access
-o	Definition: Binary indicator if the hospital is a critical access facility.
-•	Temporal Indicators
-o	Columns: Month, Quarter, Year.
-o	Definition: Temporal information for data categorization.
-•	Beds
-o	Columns: Available Beds, Licensed Beds.
-o	Definition: Capacity metrics for patient accommodation.
-•	Discharges
-o	Columns: Various categories (e.g., Medicare, Medicaid).
-o	Definition: Number of patient discharges by payment source.
-•	Patient Days
-o	Columns: Various categories.
-o	Definition: Total days patients spend in the hospital by payment source.
-•	Procedures and Visits
-o	Columns: Inpatient Surgeries, Births, ED Admissions, etc.
-o	Definition: Metrics for surgeries, births, and various visits.
-•	Charges
-o	Columns: Various categories and payment sources.
-o	Definition: Financial charges associated with different services.
-•	Financials
-o	Columns: Revenue, Expenses, Operating Margin, etc.
-o	Definition: Financial metrics covering revenue, expenses, and margins.
-•	Miscellaneous:
-o	Columns: Cash and Short-Term Investments, Uncompensated Care, Tax Subsidies, etc.
-o	Definition: Diverse metrics, including liquidity, uncompensated care, and subsidies.
-
-
-
 ## Important Consideration for the Data
 The GeoJSON dataset provided by the USGS is extensive, encompassing around 136,000 fire occurrences that demanded comprehensive analysis. While utilizing Prof. David McDonald's reader-facilitated data loading, filtering this dataset involved the meticulous selection of fire occurrences relevant to the scope of this assignment, a task that consumed a substantial amount of time.
 
