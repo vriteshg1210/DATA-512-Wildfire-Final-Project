@@ -100,9 +100,13 @@ https://drive.google.com/file/d/1qNI6hji8CvDeBsnLDAhJXvaqf2gcg8UV/view
 ## Limitations  
 
 a. Availability of a good dataset: The additional data that I am using for extending this analysis has been pulled from the internet. It has been reported by the government of Oregon but its accuracy can always be questioned. Also, I would have loved to have access to a few more data points which would have increased the accuracy of my prediction model.
+
 b. Accuracy of smoke estimate: The smoke estimate that I have created was based on the limited supply of data I had in the previous part. In reality, the AQI value analysis is based on the concentrations of several major air pollutants, each weighted to reflect its potential health impact. The common pollutants considered in the AQI calculation are Ground-level Ozone (O3), Particulate Matter (PM10 and PM2.5), Carbon Monoxide (CO), Sulfur Dioxide (SO2), Nitrogen Dioxide (NO2).
-c. Unavailability of data: We do not have hospital data from 1963 to 2007. This limits the horizon of our analysis
+
+c. Unavailability of data: We do not have hospital data from 1963 to 2007. This limits the horizon of our analysis.
+
 d. Assuming Autocorrelation: As we are using an autoregressive model for predicting the smoke estimate for the future 25 years, we are assuming that the values at the previous time steps are useful to predict the future values of the smoke estimate.
+
 e. Other factors affecting the healthcare system: As we are doing an analysis on the smoke from wildfires, we have concentrated on it being the cause of the various impacts that we have talked about in the report. However, we need to mention that several other factors can have a direct impact on our research questions. For example, a general increase in the price of healthcare can be one of the reasons for an increase in the revenue of hospitals. Only wildfires cannot be blamed for this.
 
 
